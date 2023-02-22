@@ -1,0 +1,43 @@
+body{
+    background-image: url(images/wallpaper.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#questions-el{
+    color: antiquewhite;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#question{
+    background-color: black;
+    margin: 50px 250px;
+    padding: 20px;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: burlywood;
+}
+
+button {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:black;
+    background-color: bisque;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+

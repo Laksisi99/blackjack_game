@@ -10,20 +10,53 @@ let firstCard = Math.floor(Math.random()*11) + 2
 
 let secondCard = Math.floor(Math.random()*11) + 2
 
-let sum = firstCard + secondCard + 4
+
+let sum = firstCard + secondCard 
 
 let hasBlackJack = false
 
 let isAlive = true
 
-if (sum <= 20){
-    console.log("Do you want to draw a new card? 🤔🤔🤔")
-}else if(sum === 21){
-    console.log("Yeah!!! You got blackjack 🤩🃏🤩")
-    hasBlackJack = true
-}else {
-    console.log("Sorry!!! You lost 😢😢😢")
-    isAlive = false
+let message = ""
+
+let questionsEl = document.getElementById("questions-el")
+
+let sumEl = document.querySelector("#sum-el")
+
+let cardsEl = document.getElementById("cards-el")
+
+let card = Math.floor(Math.random()*11) + 2
+
+function startGame()
+{
+    renderGame()
 }
 
-console.log(hasBlackJack)
+function renderGame()
+{
+    cardsEl.textContent = "Cards:" + firstCard + " " + secondCard
+    sumEl.textContent = "Sum:" + sum
+
+    if (sum <= 20){
+        message = "Do you want to draw a new card? 🤔🤔🤔"
+    }else if(sum === 21){
+        message = "Yeah!!! You got blackjack 🤩🃏🤩"
+        hasBlackJack = true
+    }else {
+        message = "Sorry!!! You lost 😢😢😢"
+        isAlive = false
+    }
+    
+    questionsEl.textContent = message
+   
+}
+
+function newCard()
+{
+    let card = Math.floor(Math.random()*11) + 2
+
+    sum += card
+
+    renderGame()
+}
+
