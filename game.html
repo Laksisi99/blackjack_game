@@ -7,18 +7,16 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Welcome to BlackJack</h1>
+    <h1>BlackJack</h1>
 
     
-    <div id="welcome">
-        <p id="name">Enter Your Name to Continue</p>
-        <input type="text" id="name-el" >
-        <button onclick="enterName()">ENTER NAME</button>
-        <p id="ready"></p>
-        <a href="game.html">  
-            <button id="get-name">CLICK ME</button>  
-          </a> 
-        
+    <div id="question">
+        <p id="questions-el">Want to play a round?</p>
+        <p id="cards-el">Cards: </p>
+        <p id="sum-el">Sum: </p>
+        <button onclick="startGame()">START THE GAME</button>
+        <button onclick="newCard()">NEW CARD</button>
+        <p id="player-el"></p>
     </div>
     <script src="index.js"></script>
 </body>

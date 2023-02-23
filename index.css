@@ -41,3 +41,27 @@ button {
     border-radius: 5px;
 }
 
+#welcome{
+    background-color: black;
+    margin: 50px 250px;
+    padding: 20px;
+}
+
+#player-el{
+    color: gold;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#name-el{
+    width: 600px;
+    height: 30px;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+#ready{
+    font-size: 20px;
+    color: aquamarine;
+    font-style: italic;
+}
